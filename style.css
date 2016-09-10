@@ -1,0 +1,288 @@
+/*
+ Theme Name:   Luscious Slushy
+ Theme URI:    http://divi.space/
+ Description:  A Child Theme built for Divi on Divi Space
+ Author:       Anagram
+ Author URI:   http://www.anagram.co.nz
+ Template:     Divi
+ Version:      1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Global Sections
+-------------------------------------------------- */
+
+/* Header */
+
+#top-menu a {
+	font-weight: 400;
+}
+
+#top-menu li {
+    padding-right: 40px;
+}
+
+#top-menu .menu-item-has-children > a:first-child:after,
+#et-secondary-nav .menu-item-has-children > a:first-child:after {
+    opacity: 0.4;
+}
+
+/* Footer */
+
+#footer-bottom {
+	margin-top: 0;
+}
+#footer-info {
+	float: none;
+	text-align: center;
+}
+
+#footer-widgets .footer-widget li {
+	padding-left: 0;
+}
+#footer-widgets .footer-widget li:before {
+	display: none;
+}
+#footer-widgets .footer-widget li a:hover {
+	color: #ec008c;
+}
+
+.et_pb_gutters3.et_pb_footer_columns4 .footer-widget .fwidget {
+	margin-bottom: 0 !important;
+}
+.footer-widget p {
+	margin-bottom: 1em;
+}
+
+/* Module Custom Styles
+-------------------------------------------------- */
+
+/* Buttons */
+
+.et_pb_button {
+	color: #fff !important;
+}
+
+.et_pb_button.button-inverse-white {
+	background-color: transparent !important;
+	border: 2px solid #fff !important;
+}
+.et_pb_button.button-inverse-white:hover {
+	background-color: transparent !important;
+	color: rgba(255,255,255,0.8) !important;
+	border-color: rgba(255,255,255,0.8) !important;
+}
+
+/* Modules
+-------------------------------------------------- */
+
+/* Step Messages */
+
+
+/* Home sections */
+
+.section-home-machine-hire::before,
+.section-home-party-hire::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+}
+
+.section-home-machine-hire::before {
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.section-home-party-hire::before {
+    background-color: #00aeef;
+    opacity: 0.9;
+}
+
+/* Liquid elements */
+
+.page-header {
+	padding-bottom: 90px !important;
+}
+
+.liquid-footer {
+	padding-bottom: 90px !important;
+	background-position: bottom left;
+	background-size: contain;
+}
+
+.liquid-wrapper {
+	border-radius: 25px;
+}
+
+.testimonial-bubble {
+	border-radius: 25px;
+}
+
+/* Faqs */
+
+.faq-group .et_pb_accordion .et_pb_toggle {
+	margin-bottom: 1em;
+	border-radius: 14px;
+}
+.faq-group .et_pb_toggle_content {
+	padding-top: 8px;
+}
+
+/* Occasions */
+
+/*.occasion-feature .et_pb_main_blurb_image {
+	margin-bottom: 0;
+}*/
+
+/* See also */
+
+.content-related-title {
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+/* Element Styles
+-------------------------------------------------- */
+
+.image-frame img {
+    background-color: #fff;
+    border: 8px solid #fff;
+    box-shadow: 1px 8px 45px 1px rgba(0,0,0,0.3);
+}
+
+.image-rotate-right img {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.image-rotate-left img {
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+.image-pull-top-50 {
+	margin-top: -50px;
+}
+.image-pull-top-100 {
+	margin-top: -100px;
+}
+
+/* Third Party
+-------------------------------------------------- */
+
+/* Ninja Forms */
+
+.ninja-forms-all-fields-wrap .text-wrap .ninja-forms-field,
+.ninja-forms-all-fields-wrap select,
+.ninja-forms-all-fields-wrap textarea {
+	padding: 12px;
+	font-size: 16px;
+	color: #222;
+    background-color: #eee;
+    width: 100%;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.ninja-forms-all-fields-wrap .text-wrap .ninja-forms-field:focus,
+.ninja-forms-all-fields-wrap textarea:focus {
+	border-color: #ec008c;
+}
+.ninja-forms-all-fields-wrap p {
+	margin-bottom: 1em;
+}
+
+.input-button {
+	cursor: pointer;
+}
+
+.ninja-forms-required-items {
+	display: none;
+}
+.section-home-newsletter .form-group-wrap,
+.section-home-newsletter .submit-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ninja-forms-response-msg {
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.ninja-forms-error-msg {}
+
+.ninja-forms-cont .ninja-forms-field-error {
+    font-weight: 600;
+    color: #fff;
+}
+
+.ninja-forms-field-description {
+    font-size: 0.9em;
+    color: rgba(255,255,255,0.8)
+}
+
+@media (min-width: 701px) {
+
+	.section-home-newsletter .form-group-wrap,
+	.section-home-newsletter .submit-wrap {
+	    float: left;
+	}
+	.section-home-newsletter .form-group-wrap {
+	    width: 40%;
+	}
+	.section-home-newsletter .submit-wrap {
+	    width: 20%;
+	    padding: 0;
+	}
+
+}
+
+/* Media Queries
+-------------------------------------------------- */
+
+@media (min-width: 981px) {
+
+	.et_pb_section.section-home-machine-hire {
+		padding-bottom: 54px !important;
+	}
+	.et_pb_section.section-home-machine-hire .et_pb_row {
+		padding-bottom: 27px !important;
+	}
+
+	.et_pb_gutters3 .footer-widget {
+	    margin-bottom: 2%;
+	}
+
+	.ninja-forms-all-fields-wrap .input-inline-wrap {
+		display: inline-block;
+		width: 30%;
+		margin-right: 2%;
+	}
+	.ninja-forms-all-fields-wrap .input-inline {
+		width: 100%;
+	}
+
+}
+
+.page-id-25943 #top-header,
+.page-id-25943 #main-header,
+.page-id-25943 #main-footer{
+	display:none;
+}
+.page-id-25943 #page-container { 
+	padding-top:0px !important; 
+	margin-top:-1px !important 
+}
